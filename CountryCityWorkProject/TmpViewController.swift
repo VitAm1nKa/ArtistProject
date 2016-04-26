@@ -21,6 +21,9 @@ class TmpViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func someTestFunc() {
+        
+    }
 
     /*
     // MARK: - Navigation
