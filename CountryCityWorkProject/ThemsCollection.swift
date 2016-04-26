@@ -109,13 +109,13 @@ class CoverImages {
             }
         }
     }
-    static var images = ["cover1", "cover2", "cover3"]
+    static var images = ["cover1", "cover2", "cover3", "cover4", "cover5", "cover6", "cover7", "cover8", "cover9", "cover10"]
     static func GetImage() -> String {
         return images[imageIndex++]
     }
     
     static func getImage() -> UIImage? {
-        if let image: UIImage =  UIImage(named: images[c++]) {
+        if let image: UIImage =  UIImage(contentsOfFile: images[c++]) {
             if c >= images.count {
                 c = 0
             }

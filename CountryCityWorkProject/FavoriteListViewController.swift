@@ -186,6 +186,10 @@ class FavoriteListViewController: UIViewController, UITableViewDelegate, UITable
             } else {
                 tableView.selectRowAtIndexPath(indexPath, animated: true, scrollPosition: .None)
             }
+        } else {
+            if let indexPath = tableView.indexPathForSelectedRow {
+                tableView.deselectRowAtIndexPath(indexPath, animated: true)
+            }
         }
     }
     
